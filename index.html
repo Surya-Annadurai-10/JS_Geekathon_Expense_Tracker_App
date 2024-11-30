@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Expense</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DynaPuff:wght@400..700&family=Faculty+Glyphic&family=Jaro:opsz@6..72&family=Lilita+One&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Pacifico&family=Parkinsans:wght@300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+</head>
+<body>
+     <header>
+        <section class="left-head">
+          <div class="logo-box">
+            <div class="logo">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.BzjqhOHwMnqsPfkG5b7QGAHaHl&pid=Api&P=0&h=180" alt="">
+            </div>
+            <div class="logo-brand">MyExpense</div>
+          </div>
+            <section class="middle-head">
+                <button class="search-btn">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                        <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+                        </svg>
+                </button>
+                <div class="input-box">
+                    
+                    <input type="text" placeholder="Search payment">
+                </div>
+              
+             </section>
+        
+        </section>
+     
+
+     <section class="right-head">
+        <p class="profile-name">
+            Hi Stefan!
+        </p>
+        <div class="profile-img-box">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.audMX4ZGbvT2_GJTx2c4GgHaHw&pid=Api&P=0&h=180" alt="">
+        </div>
+     </section>
+    </header>
+
+     <main>
+        <div class="left-1">
+            <div class="left-1-top">
+                <div class="home">
+                    <svg   xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        <path d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"></path>
+                    </svg>
+                </div>
+                <div class="wallet">
+                    <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        <path d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"></path>
+                    </svg>
+                </div>
+                <div class="charts">
+                    <svg   xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        <path d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="left-1-bottom">
+               <div class="logout">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                    <path d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"></path>
+                </svg>
+               </div>
+            </div>
+        </div>
+        <div class="left-2">
+            <h1>My Dashboard</h1>
+            <div class="left-2-nav">
+                <div class="all All">All</div>
+                <div class="all">Expenses</div>
+                <div class="all">Incomes</div>
+                <div class="all">Savings</div>
+            </div>
+
+            <div class="bar">
+                <div class="head">
+                    <h2>Revenue Flow</h2>
+                    <button>View All ></button>
+                  </div>
+            </div>
+
+            <div class="bottom-chart">
+                <div class="dough-nut">
+                    <div class="head">
+                        <h2>Available</h2>
+                        <button>View All ></button>
+                      </div>
+                </div>
+                <div class="income-expenses">
+                    <div class="income">
+                        <div class="head">
+                            <h2>Income</h2>
+                            <button>View All ></button>
+                          </div>
+                    </div>
+                    <div class="expenses">
+                        <div class="head">
+                            <h2>Expenses</h2>
+                            <button>View All ></button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-3">
+
+            <div class="card">
+                <h2 class="my-card">My Card</h2>
+              
+                <div class="card-layer">
+                    <div class="card-layer1"></div>
+                    <div class="card-layer2"></div>
+                    <div class="card-layer3">
+                        <p class="balance-head">Total Balance</p>
+                        <h1 class="balance">Rs . <span class="balance-num">0</span></h1>
+                         <button class="add">+</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="transactions">
+                <div class="date">
+                    24 Mar 2024
+                </div>
+              <div class="head">
+                <h2>Transactions</h2>
+                <button>View All ></button>
+              </div>
+                <div class="transaction-details">
+                    <div class="transactions-list">
+                        <div>
+                            <button class="view">></button>
+                            <p>Figma</p>
+                        </div>
+                        <p>-Rs. 140.00</p>
+                    </div>
+                    <div class="transactions-list">
+                        <div>
+                            <button class="view">></button>
+                            <p>Figma</p>
+                        </div>
+                        <p>-Rs. 140.00</p>
+                    </div>
+                    <div class="transactions-list">
+                        <div>
+                            <button class="view">></button>
+                            <p>Figma</p>
+                        </div>
+                        <p>-Rs. 140.00</p>
+                    </div>
+                    <div class="transactions-list">
+                        <div>
+                            <button class="view">></button>
+                            <p>Figma</p>
+                        </div>
+                        <p>-Rs. 140.00</p>
+                    </div>
+                    <div class="transactions-list">
+                        <div>
+                            <button class="view">></button>
+                            <p>Figma</p>
+                        </div>
+                        <p>-Rs. 140.00</p>
+                    </div>
+                    <div class="transactions-list">
+                        <div>
+                            <button class="view">></button>
+                            <p>Figma</p>
+                        </div>
+                        <p>-Rs. 140.00</p>
+                    </div>
+                    <div class="transactions-list">
+                        <div>
+                            <button class="view">></button>
+                            <p>Figma</p>
+                        </div>
+                        <p>-Rs. 140.00</p>
+                    </div>
+                </div>
+
+                <div class="animation">
+                    <div class="inner"></div>
+                </div>
+            </div>
+        </div>
+     </main>
+    
+<section class="pop-up-section">
+    <div class="pop-up">
+        <div class="form">
+            <h1>Transaction Input</h1>
+
+            <div class="popup-trans-name">
+                <input class="trans-date" type="date" placeholder="Remarks">
+            </div>
+            <div class="popup-trans">
+                <select name="" id="select">
+                <option value="">select</option>
+                <option value="income">Income</option>
+                <option value="expense">Expenses</option>
+                </select>
+            </div>
+
+            <div class="popup-trans-name">
+                <input class="trans-name" type="text" placeholder="Remarks">
+            </div>
+            <div class="popup-trans-amount">
+                <input class="trans-amount" type="number" placeholder="Enter amount">
+            </div>
+            <button class="submit">+Add</button>
+
+            <button class="clear">X</button>
+        </div>
+     </div>
+</section>
+     
+
+
+
+
+     <script src="./script.js"></script>
+</body>
+</html>
