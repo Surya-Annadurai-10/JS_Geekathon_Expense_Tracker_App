@@ -171,10 +171,28 @@ main {
 
 }
 
+.left-1 > div a:hover svg,
+.left-1-bottom a:hover svg{ 
+  fill: green;
+}
+
+.left-1 > div a
+{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
 .left-1-top > div:hover 
    {
   background-color: white;
   fill: green;
+}
+
+.left-1-bottom a svg{
+  fill: white;
 }
 
 .left-1-bottom {
@@ -191,13 +209,36 @@ main {
 
 }
 
-.left-1-bottom > div:hover 
+.left-1-bottom  div:hover 
    {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   fill: green;
 }
 
+.star{
+  width: 40px;
+  animation-name: star;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   
+}
+
+
+
+.charts:hover svg{
+   fill:green;
+   transition: 0.1s ease-in-out;
+}
+
+@keyframes star {
+   0%{
+    transform: rotateZ(360deg);
+   }
+}
+
+
+
 
 
 .left-2 {
@@ -227,8 +268,8 @@ position: relative;
   gap: 1rem;
 }
 
-.all {
-  width: 150px;
+.All {
+  width: 220px;
   height: 50px;
   background-color: rgb(32, 48, 46);
   color: rgb(165, 165, 165);
@@ -239,9 +280,6 @@ position: relative;
   transition: 0.2s ease-in-out;
 }
 
-.All {
-  width: 100px;
-}
 
 .all:hover{
     background-color: rgb(62,172,145);
@@ -734,7 +772,7 @@ justify-content: center;
   );
  border-radius: 30px;
  padding: 1rem;
-
+box-shadow: 0 0 30px  rgb(26, 80, 67);
 }
 
 .inc-container .container{
@@ -769,4 +807,15 @@ table th{
 
 table td{
   padding: 1rem;
+  text-transform: capitalize;
 }
+
+.logout a{
+  text-decoration: none;
+}
+
+.logout:hover span{
+  color: green;
+}
+
+

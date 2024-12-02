@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    /* height: 200vh; */
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(20, 20, 20),
+        rgb(23, 66, 56),
+        rgb(20, 20, 20)
+      );
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+header{
+   
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(20, 20, 20),
+        rgb(23, 66, 56),
+        rgb(20, 20, 20)
+      );
+    color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid grey;
+    backdrop-filter: blur(60px);
+    /* display: none; */
+}
+
+header h1{
+    text-shadow:  0 0 10px grey;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 1rem;
+    /* font-weight: bold; */
+}
+
+.nav > div:hover a{
+   background-color: white;
+   color: #000;
+   font-weight: bold;
+}
+
+.nav > div a{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav > div{
+    width: 225px ;
+    height: 50px;
+    /* background-color: black; */
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+
+
+
+
+main{
+    margin-top: 15vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main h1{
+    color: white;
+    text-align: start;
+    margin: 2rem;
+    text-shadow: 0 0 10px grey;
+}
+
+
+
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.home{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-items: center;
+}
+
+.home a{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.417);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.home:hover a{
+   background-color: white;
+   transition: 0.2s ease-in-out;
+}
+
+.home:hover svg{
+    fill:green;
+}

@@ -1,3 +1,5 @@
+
+
 let add = document.querySelector(".add");
 let popUpSection = document.querySelector(".pop-up-section");
 let select = document.querySelector("#select");
@@ -13,8 +15,17 @@ let totalIncome = document.querySelector(".inc-amount");
 let totalExpense = document.querySelector(".exp-amount");
 let date = document.querySelector(".date");
 let incomePopUp = document.querySelector(".inc-pop-up-section");
+let history = document.querySelector(".history");
+let id = 0;
+let table = document.querySelector(".table")
+let totalInc;
+let totalExp;
+
 
 date.innerText = new Date();
+displayExpense(arr);
+displayIncome(arr);
+
 
 
 document.addEventListener("click", (event) => {
@@ -44,17 +55,11 @@ document.addEventListener("click", (event) => {
         bar.childNodes[1].remove();
         displayChart();
         console.log(arr);
-        updateTotal();``
+        updateTotal(arr);
+       
     }
 
-    if(table.hasChildNodes("tr")){
-        // let allTr = document.querySelectorAll("tr");
- 
-        // allTr.forEach((ele) =>{
-        //    ele.remove();
-        // })
-     } 
-    displayIncome(arr);
+    // displayIncome(arr);
        
 
     transDate.value = "";
@@ -66,25 +71,46 @@ document.addEventListener("click", (event) => {
 
 
   if(event.target.classList.contains("viewExp")){
+    incomePopUp.style.display = "block";
    displayExpense(arr);
+   history.innerText = "Expense History";
     
   }
 
   if(event.target.classList.contains("viewInc")){
     incomePopUp.style.display = "block";
-   
+   history.innerText = "Income History";
+    displayIncome(arr);
      
    }
    if(event.target.classList.contains("ex")){
     incomePopUp.style.display = "none";
    }
+
+
+   if(event.target.classList.contains("trans-view")){
+    incomePopUp.style.display = "block";
+    history.innerText = "Transaction History";
+     displayAllTransaction(arr);
+   }
   
 });
-let table = document.querySelector(".table")
+
+
+
 
 function displayIncome(arr){
+    table.innerHTML = "";
   
-  
+  table.innerHTML = `
+   <thead>
+        <th>Date</th>
+        <th>Transaction Type</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Amount</th>          
+    </thead>
+  `
     
   arr.filter((ele)=>{
     return ele.type == 'income';
@@ -102,6 +128,67 @@ function displayIncome(arr){
   })
 }
 
+
+function displayExpense(arr){
+    table.innerHTML = "";
+  
+  table.innerHTML = `
+   <thead>
+        <th>Date</th>
+        <th>Transaction Type</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Amount</th>          
+    </thead>
+  `
+    
+  arr.filter((ele)=>{
+    return ele.type == 'expenses';
+  }).forEach((value) =>{
+    let tr = document.createElement("tr");
+     
+    tr.innerHTML = `
+           <td>${value.date}-${value.month}-${value.year}</td>
+            <td>${value.type}</td>
+            <td>${value.category}</td>
+            <td>${value.name}</td>
+            <td>Rs. <span>${value.amount}</span></td>
+     `
+     table.appendChild(tr);
+  })
+}
+
+
+
+
+function displayAllTransaction(arr){
+    table.innerHTML = "";
+  
+  table.innerHTML = `
+   <thead>
+        <th>Date</th>
+        <th>Transaction Type</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Amount</th>          
+    </thead>
+  `
+    
+  arr.forEach((value) =>{
+    let tr = document.createElement("tr");
+     
+    tr.innerHTML = `
+           <td>${value.date}-${value.month}-${value.year}</td>
+            <td>${value.type}</td>
+            <td>${value.category}</td>
+            <td>${value.name}</td>
+            <td>Rs. <span>${value.amount}</span></td>
+     `
+     table.appendChild(tr);
+  })
+}
+
+updateTotal(arr);
 
 
 
@@ -128,8 +215,17 @@ function displayIncome(arr){
 //     {date:30 , month:11, year:2024, category:'entertainment', name:'tomato', type:'expenses', amount:1000}
 // ]
 // let arr = [];
-let balanceAmount = 0;
-let maxBalance = 0;
+// let balanceAmount = arr.reduce((acc , curr) =>{
+//     return acc + curr.amount; 
+// },0);
+
+let balanceAmount = totalInc-totalExp;
+
+  balance.innerText = `${balanceAmount}`;
+  inner.style.width = "100%";
+console.log(balanceAmount);
+
+let maxBalance = balanceAmount;
 let width = 0;
 
 // const ctx = document.getElementById('myChart');
@@ -159,6 +255,12 @@ window.onload =()=>{
     displayChart();
 // console.log(bar.childNodes(".chart"))
 }
+
+
+arr.forEach((val) =>{
+  console.log(val)
+  displayOnUI(val);
+})
 
 
 
@@ -256,7 +358,9 @@ console.log(arr);
   }
 }
 
-let id = 0;
+
+
+
 function displayOnUI(value) {
   // console.log(value.name);
 
@@ -301,16 +405,18 @@ function displayOnUI(value) {
   });
 }
 
-function updateTotal(){
-    console.log(arr);
-    let totalInc = arr.filter((value) =>{
+
+
+function updateTotal(val){
+    console.log(val);
+    totalInc = val.filter((value) =>{
         return value.type == 'income';
     }).reduce((acc , curr) =>{
         return acc + curr.amount;
     }, 0);
 console.log("totalInc", totalInc);
 totalIncome.innerText = totalInc;
-    let totalExp = arr.filter((value) =>{
+    totalExp = val.filter((value) =>{
         return value.type == 'expenses'
     }).reduce((acc , curr) =>{
         return acc + curr.amount;
@@ -321,3 +427,4 @@ totalIncome.innerText = totalInc;
    
     totalExpense.innerText = totalExp;
 }
+

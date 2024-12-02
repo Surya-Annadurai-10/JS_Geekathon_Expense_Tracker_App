@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts</title>
+    <link rel="stylesheet" href="charts.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DynaPuff:wght@400..700&family=Faculty+Glyphic&family=Jaro:opsz@6..72&family=Lilita+One&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Pacifico&family=Parkinsans:wght@300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    
+    <header>
+       <div class="left">
+        <div class="home">
+            <a href="../home/index.html">
+             <svg fill="white"
+             xmlns="http://www.w3.org/2000/svg"
+             x="0px"
+             y="0px"
+             width="30"
+             height="30"
+             viewBox="0 0 48 48"
+           >
+             <path
+               d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+             ></path>
+           </svg>
+            </a>
+           </div>
+
+        <h1>Data Visualization</h1>
+       </div>
+        <div class="nav">
+          <div class="div">
+            <a href="#1">Bar Chart</a>
+          </div>
+          <div class="div">
+            <a href="#2">Pie Chart</a>
+          </div>
+          <div class="div">
+            <a href="#3">DoughNut Chart</a>
+          </div>
+          <div class="div">
+            <a href="#4">Radar Chart</a>
+          </div>
+          <div class="div">
+            <a href="#5">Line Chart</a>
+          </div>
+            
+          
+           
+            
+        </div>
+    </header>
+
+   <main>
+   <h1 id="1" >Bar Chart</h1>
+    <section  class="bar"> </section>
+
+     <h1  id="2">Pie Chart</h1>
+    <section  class="pie"></section>
+
+    <h1 id="3">Dough Nut Chart</h1>
+    <section  class="dough-nut"></section>
+
+   <h1 id="4">Radar Chart</h1>
+    <section  class="radar"></section>
+
+   <h1 id="5">Line Chart</h1>
+    <section  class="line"></section>
+   </main>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script  src="../data.js"></script>
+   <script src="./charts.js"></script>
+</body>
+</html>
