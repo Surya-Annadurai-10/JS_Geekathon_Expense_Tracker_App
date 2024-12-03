@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="signUp.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form action="../login/login.html"  onsubmit="return validation()">
+        <h3>Sign Up</h3>
+        <!-- <input type="text" placeholder="User Name" id="username">  -->
+        
+        <label for="username">Username</label>
+        <input type="text" class="username" placeholder="User Name">
+        <!-- <input type="email" placeholder="Email" id="email"  >  -->
+       
+        <label for="email">Email</label>
+        <input type="email" class="email" placeholder="email">
+       <!-- <input type="password" placeholder="Password" id="password" >  -->
+
+        <label for="password">Password</label>
+        <input type="password" class="password"  placeholder="password">
+        
+
+  <div class="password-strength">
+        <div class="cases">
+            <span class="lowercase">Lowercase   &#x2022;</span>
+            <span class="uppercase">Uppercase   &#x2022;</span>
+            <span class="numbers">Number        &#x2022;</span>
+            <span class="symbols">Symbols</span>
+        </div>
+    
+        <div class="rating">
+            <div class="inner"></div>
+        </div>
+    
+        <div>
+            <p>Passsword has <strong class="num-char">0</strong> chars</p>
+            <p>Your password is <strong class="strength">Weak</strong></p>
+        </div>
+
+     </div>
+
+        <label for="confirm">Confirm Password</label>
+        <input type="password" class="confirm"  placeholder="Confirm Password"> 
+        
+         
+        <!-- <input type="password" placeholder="Confirm Password" id="confirm"> -->
+        
+        
+
+
+   
+
+
+
+        
+
+       <button id="btn">Sign Up</button>
+        <div class="social">
+          <p>Already have an account ? <a href="../login/login.html">Login</a></p>
+        </div>
+    </form>
+
+    <script src="./signUp.js"></script>
+</body>
+</html>

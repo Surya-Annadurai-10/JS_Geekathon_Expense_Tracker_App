@@ -94,10 +94,17 @@
                 </svg>
             </a>
           </div>
+          <div class="charts">
+            <a href="../tax/tax.html">
+              <span  style="font-size: 2.5rem;" class="material-symbols-outlined bank">
+                account_balance
+                </span>
+            </a>
+          </div>
         </div>
         <div class="left-1-bottom">
           <div class="logout">
-            <a href="">
+            <a href="../landingPage/landing.html">
               <span class="material-symbols-outlined">
                 logout
                 </span>
@@ -293,6 +300,8 @@
         const ctx1 = document.getElementById("myChart-1");
 
         for (let i = 0; i < categoryArr.length; i++) {
+          console.log(arr.length);
+          
           let value = arr
             .filter((ele) => {
               return ele.category == categoryArr[i];

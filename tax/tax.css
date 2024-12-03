@@ -44,6 +44,7 @@ header{
     border-bottom: 1px solid grey;
     backdrop-filter: blur(60px);
     /* display: none; */
+    z-index: 100;
 }
 
 header h1{
@@ -86,19 +87,22 @@ header a{
     border-radius: 10px;
     display: grid;
     place-items: center;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 
 
 
 
 main{
-    margin-top: 15vh;
-    /* background-color: red; */
+    margin-top: 17vh;
+    /* background-color: red;  */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
+    width: 100%;
+    height: 300vh;
+    /* margin: auto; */
 }
 
 main h1{
@@ -143,4 +147,332 @@ main h1{
 
 .home:hover svg{
     fill:green;
+}
+
+.tax-cal{
+    width: 40%;
+    height: 80vh;
+    background-color: rgb(44,69,64,0.8);
+    backdrop-filter: blur(10px);
+  color: white;
+    border-radius: 50px;
+    border: 1px solid  rgb(44, 121, 102);
+  padding: 0 3rem;
+  box-shadow: 0 0 20px rgb(44,69,64);
+}
+
+.hi{
+    
+}
+
+
+
+.input{
+    width: 100%;
+    height: 8%;
+    /* margin: auto; */
+    /* background-color: red; */
+    
+}
+
+.input input{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+
+}
+
+
+.button{
+    width:100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(62,172,145);
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgb(62,172,145);
+    transition: 0.3s ease-in-out;
+    margin: 1.5rem 0;
+    position: relative;
+ 
+}
+
+.income,.tax-rate{
+    font-size: 1.2rem;
+}
+
+.income span,.tax-rate span{
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    height: 27vh;
+    margin: 1rem 0;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+table th,td{
+    border: 1px solid white;
+}
+
+table td{
+    text-align: center;
+    border: 1px solid white;
+    
+}
+
+table th{
+    background-color: rgb(62,172,145);
+
+   padding: 0.8rem;
+}
+
+.tax-pay,.amt-left{
+   font-size: 1.3rem;
+}
+
+.tax-pay span,.amt-left span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-size: 2rem;
+    /* color: rgb(62,172,145); */
+ }
+
+ .tax-cal .tax{
+    /* background-color: red; */
+    margin-bottom: 2rem;
+    text-align: center;
+ }
+
+ .amt-left span{
+    /* font-family: 'Times New Roman', Times, serif; */
+    background: linear-gradient(to right,#fff 10%, rgb(62,172,145));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+   
+ }
+
+
+ .tax-advicer{
+    width: 100%;
+    min-height: 130vh;
+    background-color: #0D0D0D;
+    margin-top: 2rem;
+ }
+
+ .header{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    margin: 2rem 0;
+ }
+
+.container{
+  width: 40%;
+  height: 30vh;
+  border-radius: 20px;
+  display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  background-color: #1e1e1e;
+}
+
+.enter-box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.enter-box input{
+    width: 80%;
+    height: 5vh;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+.get{
+    width: 40%;
+    margin: auto;
+    height: 5vh;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    background-color: #DCF458;
+    box-shadow: 0 0 10px #DCF458;
+}
+.get:hover{
+    background-color: #000;
+    color: #DCF458;
+}
+
+.container-wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 2rem;
+}
+
+.answer-wrap{
+    width:100% ;
+    /* height:60vh; */
+}
+
+.answer-box{
+    width: 40%;
+    height: 60vh;
+margin: auto;
+/* background-color: red; */
+color: white;
+padding: 1rem;
+overflow-y: scroll;
+/* margin: 2rem; */
+}
+
+.answer-box::-webkit-scrollbar{
+    display: none;
+}
+
+
+.welcome{
+    margin-top:2rem;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.welcome-name{
+    font-family: 'Times New Roman', Times, serif;
+   background: linear-gradient(to right, #DCF458, #DCF458);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+
+}
+
+
+.para{
+    display: flex;
+    gap: 1rem;
+}
+
+.bottom{
+    width: 100%;
+    height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.answer-icon{
+    flex-direction: row;
+    /* background-color: red; */
+    height: 15%;
+    justify-content: flex-start;
+    margin: 2rem;
+}
+
+.plus-icon  span{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+     border-radius: 50%;
+    display: grid;
+    place-items: center;
+    /* padding: 1rem; */
+}
+
+.plus-icon:hover span{
+    box-shadow: 0 0 20px  rgba(83, 83, 83, 0.9) ;
+    background-color: rgba(83, 83, 83, 0.38);
+}
+
+.question-box p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.you-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    /* background-color: black; */
+    color: white;
+}
+
+.you-icon{
+    display: grid;
+    place-items: center;
+}
+
+.loading-img{
+    width: 100px;
+    margin: 10rem;
+    /* padding: 2rem; */
+    /* background-color: white; */
+}
+
+.loading{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+/* background-color: white; */
+}
+
+.query{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+
+}
+
+
+.answer{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.star{
+    animation-name: star;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes star {
+    0%{
+        transform: rotateZ(-360deg);
+    }
 }

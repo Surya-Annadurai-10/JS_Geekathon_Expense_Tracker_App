@@ -110,6 +110,15 @@ header {
   gap: 1rem;
 }
 
+.charts a {
+  text-decoration: none;
+}
+
+.charts a:hover .bank{
+color: green;
+}
+
+
 .profile-img-box {
   width: 60px;
   height: 60px;
@@ -149,7 +158,7 @@ main {
 
 .left-1-top {
   width: 100%;
-  height: 30vh;
+  height: 45vh;
   background-color: rgb(32, 48, 46);
   border-radius: 40px;
   display: flex;
@@ -790,11 +799,12 @@ table{
   margin: auto;
   max-height: 90%;
   border: 1px solid white;
+  border-collapse: collapse;
 }
 
 table td,th{
   border: 1px solid white;
-  box-shadow: 0 0 5px white;
+  /* box-shadow: 0 0 5px white; */
   text-align: center;
   font-size: 1.2rem;
 }

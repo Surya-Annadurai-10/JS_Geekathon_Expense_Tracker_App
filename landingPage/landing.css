@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" ,sans-serif;
+}
+
+.bg-video{
+    width: 100%;
+    height: 110vh;
+    position:fixed ;
+    left:0;
+    right: 0;
+    top: 0;
+    /* bottom: 0; */
+    background-color: #131215;
+    z-index: -1;
+}
+
+.video{
+    width: 100%;
+    height: 99.5%;
+}
+
+header{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.left h1{
+    color: white;
+    font-size: 2.1rem;
+    text-shadow: 0 0 5px grey;
+}
+
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.login{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    /* background-color: yellow; */
+}
+
+.login button{
+    width: 100%;
+    height: 100%;
+    border-radius:  25px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s ease-in-out;
+
+    background-color: #262626;
+}
+
+
+.get{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    /* background-color: yellow; */
+    /* background-color: white; */
+    color: black;
+}
+
+.get button,
+.container button{
+    width: 100%;
+    height: 100%;
+    border-radius:  25px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    background-color: white;
+    
+    transition: 0.2s ease-in-out;
+}
+
+.get:hover button,
+.login:hover button,
+.container button:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 10px #8a5cff7f;
+    background-color: #895CFF;
+    color: white;
+    font-weight: bold;
+}
+
+.get  button{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 0.5rem;
+}
+
+.get{
+    text-decoration: none;
+    color: black;
+}
+
+
+main{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* background-color: rgba(255, 255, 54, 0.182); */
+}
+
+.container{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.container h1{
+    font-size: 5rem;
+    /* margin-bottom: 2rem; */
+    text-shadow: 0 0 10px grey;
+}
+
+.p {
+    width: 80%;
+    margin:0 auto;
+    /* background-color: yellow; */
+}
+
+.p p{
+    color: rgb(197, 197, 197);
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.container button{
+animation-name: glow;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+color: black;
+
+}
+
+.container button{
+    margin-top: 2rem;
+}
+
+
+@keyframes glow {
+    0%{
+        background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+        box-shadow: 0 0 30px green;
+    }
+
+    25%{
+        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        box-shadow: 0 0 30px rgb(239, 11, 212);
+    }
+
+    50%{
+        background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+        box-shadow: 0 0 30px rgb(0, 0, 128);
+    }
+
+    75%{
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+        box-shadow: 0 0 30px rgb(128, 36, 0);
+    }
+
+    100%{
+        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+
+        box-shadow: 0 0 30px rgb(0, 128, 128);
+    }
+
+}
+
+.get button span{
+    display: grid;
+    place-items:center;
+}

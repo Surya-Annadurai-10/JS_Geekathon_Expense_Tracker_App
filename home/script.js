@@ -222,7 +222,9 @@ updateTotal(arr);
 let balanceAmount = totalInc-totalExp;
 
   balance.innerText = `${balanceAmount}`;
-  inner.style.width = "100%";
+  if(balanceAmount < 0 ) inner.style.width = "0%";
+  else inner.style.width = "100%";
+  
 console.log(balanceAmount);
 
 let maxBalance = balanceAmount;
@@ -258,7 +260,7 @@ window.onload =()=>{
 
 
 arr.forEach((val) =>{
-  console.log(val)
+  // console.log(val)
   displayOnUI(val);
 })
 
@@ -356,6 +358,9 @@ console.log(arr);
     console.log("current after expenses : ", maxBalance);
     console.log("bal after expenses : ", balanceAmount);
   }
+console.log(balanceAmount);
+
+  if(balanceAmount < 0 ) inner.style.width = "0%";
 }
 
 
@@ -378,7 +383,9 @@ function displayOnUI(value) {
   transactionList.innerHTML = `
      <div>
          <button class="view">
-        x
+      <span class="material-symbols-outlined">
+delete
+</span>
          </button>
          <p>${value.name}</p>
      </div>
