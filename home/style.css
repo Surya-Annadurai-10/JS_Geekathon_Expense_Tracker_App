@@ -135,6 +135,134 @@ color: green;
   font-size: 1.3rem;
 }
 
+.home,
+.ai,
+.charts,
+.tax,
+.logout{
+  position: relative;
+}
+
+
+.home::after{
+  content: "Home";
+  position: absolute;
+  background-color: white;
+  color: green;
+  width:70px;
+  border-radius: 15px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  left: 110%;
+  box-shadow: 0 0 10px grey;
+  visibility: hidden;
+  /* transition: 0.3s ease; */
+}
+
+
+
+
+.home:hover::after{
+  visibility: visible;
+}
+
+.ai::after{
+  content: "Gemini AI";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: green;
+
+  width:100px;
+  border-radius: 15px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  left: 110%;
+  box-shadow: 0 0 10px grey;
+  visibility: hidden;
+  /* transition: 0.3s ease; */
+}
+
+
+
+
+.ai:hover::after{
+  visibility: visible;
+}
+
+
+.charts::after{
+  content: "Charts";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: green;
+
+  width:100px;
+  border-radius: 15px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  left: 110%;
+  box-shadow: 0 0 10px grey;
+  visibility: hidden;
+  /* transition: 0.3s ease; */
+}
+
+
+
+
+.charts:hover::after{
+  visibility: visible;
+}
+
+.tax-show::after{
+  content: "Finance";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: green;
+
+  width:100px;
+  border-radius: 15px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  left: 110%;
+  box-shadow: 0 0 10px grey;
+  visibility: hidden;
+  /* transition: 0.3s ease; */
+}
+
+.logout::after{
+  content: "Log Out";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: green;
+
+  width:100px;
+  border-radius: 15px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  left: 110%;
+  box-shadow: 0 0 10px grey;
+  visibility: hidden;
+  /* transition: 0.3s ease; */
+}
+
+
+
+
+.logout:hover::after{
+  visibility: visible;
+}
+
+
+
+.tax-show:hover::after{
+  visibility: visible;
+}
+
 main {
   width: 95%;
   height: 100vh;

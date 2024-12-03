@@ -383,9 +383,7 @@ function displayOnUI(value) {
   transactionList.innerHTML = `
      <div>
          <button class="view">
-      <span class="material-symbols-outlined">
-delete
-</span>
+          x
          </button>
          <p>${value.name}</p>
      </div>
