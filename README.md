@@ -1,5 +1,5 @@
 # 📈💸 MYEXPENSE APP 💸📈
-MYEXPENSE is a comprehensive Expense Tracker application that helps users manage their finances, track expenses and income, calculate taxes, and get personalized financial advice. The application integrates advanced AI tools like Gemini AI and Tax AI Assistant to provide insights and tax guidance based on user data. With features like data visualization, tax calculation, and real-time expense tracking, MYEXPENSE offers a complete solution for managing personal finances.
+MYEXPENSE is a comprehensive **Expense Tracker application** that helps users manage their finances, track expenses and income, calculate taxes, and get personalized financial advice. The application integrates advanced AI tools like Gemini AI and Tax AI Assistant to provide insights and tax guidance based on user data. With features like data visualization, tax calculation, and real-time expense tracking, MYEXPENSE offers a complete solution for managing personal finances.
 ## Hosted Link : [Click Me](https://surya-annadurai-10.github.io/JS_Geekathon_Expense_Tracker_App/landingPage/landing.html)
 
 ## Tech Stack
