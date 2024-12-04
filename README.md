@@ -49,6 +49,7 @@ MYEXPENSE is a comprehensive **Expense Tracker application** that helps users ma
 ## 6. Gemini AI Integration
 - Gemini AI is integrated to provide advanced insights and information based on user queries related to finances, expenses, or other queries.
 ![Screenshot 2024-12-04 194259](https://github.com/user-attachments/assets/46ac34c5-90e9-4c4a-bb19-1f4240cce646)
+![Screenshot 2024-12-04 200539](https://github.com/user-attachments/assets/8d331b05-ccfb-4618-8dfa-48f45f831ee6)
 
 ## 7. Tax AI Assistant
 - Provides personalized tax advice based on the user’s income and financial data.
