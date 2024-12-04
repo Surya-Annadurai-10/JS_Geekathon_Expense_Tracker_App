@@ -23,7 +23,14 @@ return result.response.text();
 // console.log(answerBox.childNodes[1]);
 
 input.addEventListener("keyup" , (e) =>{
-   if(e.key == 'Enter'){
+    press.style.visibility = "hidden";
+
+    if(e.key != "Enter"){
+    
+    update(input.value);
+
+    }else if(e.key == 'Enter'){
+    press.style.visibility = "hidden";
     answerBox.childNodes[1].remove();
 
    
@@ -134,14 +141,6 @@ answerBox.childNodes[answerBox.childNodes.length - 1].remove();
    answerBox.appendChild(dataBox);
    
 }
-
-
-input.addEventListener("keyup" , (e) =>{
-    press.style.visibility = "hidden";
-    if(e.key != "Enter"){
-        update(input.value);
-    }
-});
 
 
 function debouncing(fn , delay){
