@@ -474,3 +474,60 @@ overflow-y: scroll;
         transform: rotateZ(-360deg);
     }
 }
+
+@media screen and (min-width:600px) and (max-width:950px){
+    .tax-cal{
+        width: 80%;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .answer-box{
+        /* background-color: yellow; */
+        width: 90%;
+    }
+}
+
+@media  screen and (max-width:599px) {
+    .tax-cal{
+        width: 90%;
+    }
+
+    .tax-cal{
+        width: 80%;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .answer-box{
+        /* background-color: yellow; */
+        width: 90%;
+    }
+
+
+    header{
+        flex-direction: column;
+        gap: 1rem;
+        height: 15vh;
+        padding: 1rem 0;
+    }
+
+    .nav > div{
+        width: 125px ;
+        height: 40px;
+        gap: 1rem;
+    }
+
+    .header h1{
+        font-size: 2rem;
+    }
+
+
+.welcome h1{
+    font-size: 2rem;
+}
+}

@@ -61,7 +61,7 @@ console.log("hi")
         return false;
     }
 
-    if(password.length < 7 && confirmPass < 7){
+    if(password.length < 6 && confirmPass < 6){
         alert("Password Should contain atleast 6 Characters");
         return false;
     }
@@ -129,29 +129,29 @@ function check(password) {
     inner.style.width = `0%`;
   }
 
-  if (password.length == 4) {
+  if (password.length == 3) {
     inner.style.width = `20%`;
     inner.style.backgroundColor = "red";
   }
 
-  if (password.length == 6) {
+  if (password.length == 5) {
     inner.style.width = `30%`;
   }
 
-  if (password.length == 9) {
+  if (password.length == 6) {
     inner.style.width = `40%`;
   }
 
-  if (password.length == 12) {
+  if (password.length == 7) {
     inner.style.width = `50%`;
   }
 
-  if (password.length == 15) {
+  if (password.length == 8) {
     inner.style.width = `60%`;
     inner.style.backgroundColor = "#FFA500";
   }
 
-  if (password.length == 18) {
+  if (password.length == 9) {
     inner.style.width = `70%`;
     inner.style.backgroundColor = "#FFA500";
   }
@@ -183,7 +183,7 @@ function check(password) {
 
 
   if (
-    password.length >= 4 &&
+    password.length >= 3 &&
     lowEx.test(password) &&
     spEx.test(password) &&
     digEx.test(password) &&
@@ -194,7 +194,7 @@ function check(password) {
   }
 
   if (
-    password.length >= 6 &&
+    password.length >= 5 &&
     lowEx.test(password) &&
     spEx.test(password) &&
     digEx.test(password) &&
@@ -205,7 +205,7 @@ function check(password) {
   }
 
   if (
-    password.length >= 9 &&
+    password.length >= 6 &&
     lowEx.test(password) &&
     spEx.test(password) &&
     digEx.test(password) &&
@@ -216,7 +216,7 @@ function check(password) {
   }
 
   if (
-    password.length >= 12 &&
+    password.length >= 7 &&
     lowEx.test(password) &&
     spEx.test(password) &&
     digEx.test(password) &&
@@ -227,7 +227,7 @@ function check(password) {
   }
 
   if (
-    password.length >= 15 &&
+    password.length >= 8 &&
     lowEx.test(password) &&
     spEx.test(password) &&
     digEx.test(password) &&
@@ -238,7 +238,7 @@ function check(password) {
   }
 
   if (
-    password.length >= 18 &&
+    password.length >= 9 &&
     lowEx.test(password) &&
     spEx.test(password) &&
     digEx.test(password) &&

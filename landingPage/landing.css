@@ -146,7 +146,7 @@ main{
 }
 
 .p p{
-    color: rgb(197, 197, 197);
+    color: rgb(220, 220, 220);
     font-size: 1.5rem;
     line-height: 1.5;
 }
@@ -200,4 +200,38 @@ color: black;
 .get button span{
     display: grid;
     place-items:center;
+}
+
+
+@media screen and (min-width:600px) and (max-width:950px){
+.bg-video{
+    height: 138vh;
+}
+
+.container h1{
+    font-size: 3rem ;
+}
+
+.p p{
+    font-size: 1.2rem;
+}
+
+}
+
+@media  screen and (max-width:599px) {
+    .bg-video{
+        height: 160vh;
+    }
+    
+    .container h1{
+        font-size: 3rem ;
+    }
+    
+    .p p{
+        font-size: 1.2rem;
+    }
+
+    .container{
+        width: 90%;
+    }
 }

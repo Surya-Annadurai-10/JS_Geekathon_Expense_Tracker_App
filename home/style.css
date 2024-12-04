@@ -30,8 +30,9 @@ header {
 .left-head {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 5rem;
+  width: 38%;
 }
 
 .logo-box {
@@ -58,7 +59,7 @@ header {
 }
 
 .middle-head {
-  min-width: 400px;
+  width: 100%;
   background-color: rgb(32, 48, 46);
   height: 7vh;
   border-radius: 30px;
@@ -66,6 +67,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  /* background-color: yellow; */
 }
 
 .search-btn {
@@ -956,4 +958,220 @@ table td{
   color: green;
 }
 
+
+@media  screen and (min-width: 750px) and (max-width: 1150px) {
+  .balance-head{
+    font-size: 1.2rem ;
+  }
+
+  .balance,
+  .balance-num{
+    font-size:2rem ;
+  }
+
+  .add{
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem ;
+  }
+  .head h2{
+    font-size: 1.4rem;
+  }
+
+  .date{
+    font-size:0.8rem ;
+  }
+
+  .left-2{
+    width: 60%;
+  }
+
+  .chart{
+    width: 200%;
+    height: 95% ;
+    /* background-color: yellow; */
+  }
+
+}
+
+
+@media screen and (min-width:400px) and (max-width:900px) {
+    main{
+      flex-direction: column;
+      height: 250vh;
+      /* background-color: yellow; */
+      justify-content: space-between;
+    }
+
+    .pop-up .form{
+      width: 70%;
+    }
+
+    .form h1{
+      font-size: 2rem;
+    }
+
+    header{
+      padding: 1rem;
+    }
+
+    .left-1{
+     flex-direction: row;
+     /* background-color: yellow; */
+      width: 100%;
+      height: 8vh;
+      gap: 1rem;
+     justify-content: space-between;
+    }
+
+    .left-1-top{
+      flex-direction: row;
+      height:8vh ;
+      width: 92%;
+    }
+
+    .left-1-bottom{
+      width: 8%;
+    }
+
+    .home::after,
+    .ai::after,
+    .charts::after,
+    .tax::after,
+    .logout::after{
+      /* visibility: visible; */
+      left: 0%;
+      top: 110%;
+      z-index: 1000;
+    }
+
+    .left-2{
+      width: 95%;
+      position: absolute;
+      top: 140%;
+      /* margin: 1rem; */
+    }
+
+    .chart{
+width: 100%;
+height: 80%;
+
+    }
+
+    .bar{
+      height: 80%;
+      justify-content: center;
+      /* background-color: white; */
+    }
+
+    .left-3{
+      /* display: none; */
+      height:100% ;
+      width: 100%;
+      /* background-color: yellow; */
+      position: absolute;
+      top: 30%;
+      left: 0%;
+    }
+
+    .d-nut{
+      /* width: 200%; */
+      height: 107%;
+      /* background-color: white; */
+    }
+
+   .balance-head{
+    font-size: 2rem;
+   }
+
+   .balance,
+   .balance-num{
+    font-size: 3rem;
+   }
+
+   .add{
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+   }
+
+   .date{
+    font-size: 1rem;
+   }
+
+   .head h2{
+    font-size: 2rem;
+   }
+
+.left-head{
+  width: 70%;
+}
+
+header{
+  gap: 2rem;
+}
+
+
+.profile-name{
+  text-align: center;
+  font-size: 1rem;
+}
+.profile-img-box{
+  width: 40px;
+  height: 40px;
+}
+
+
+.input-box input::placeholder{
+  font-size: 1rem;
+
+}
+
+.search-btn svg{
+  width: 20px;
+  height: 20px;
+}
+
+.middle-head {
+  padding: 0 1rem;
+}
+  }
+
+   
+
+  @media screen and (max-width:560px) {
+     .bar{
+       height:55% ;
+       
+     }
+
+  .head h2{
+    font-size: 1.5rem;
+  }
+.head button{
+    
+   padding: 0.5rem;
+   /* background-color: white; */
+   font-size: 0.8rem;
+  }
+.body h1{
+    font-size: 2rem;
+  }
+    
+
+   main{
+    height: 230vh;
+   }
+
+   
+   .balance-head
+   {
+    font-size: 1.4rem;
+   }
+
+
+   .balance,.balance-num{
+    font-size: 2rem;
+   }
+  }
 

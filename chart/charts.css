@@ -103,6 +103,13 @@ header a{
     border-radius: 30px;
 }
 
+.left-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
 main{
     margin-top: 15vh;
     /* background-color: red; */
@@ -157,4 +164,99 @@ main h1{
 
 .home:hover svg{
     fill:green;
+}
+
+@media screen and (min-width:600px) and (max-width:950px){
+
+
+
+    .pie,
+    .bar,
+    .dough-nut,
+    .radar,
+    .line{
+        /* padding: 5rem; */
+        width: 90%;
+        height: 50vh;
+        background-color: white;
+        margin-bottom: 5rem;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+   .pie-chart,.d-nut,.radar-chart{
+        /* width: 90%; */
+        height:130% ;
+    }
+
+}
+
+@media  screen and (max-width:599px) {
+    .pie,
+    .bar,
+    .dough-nut,
+    .radar,
+    .line{
+        /* padding: 5rem; */
+        width: 90%;
+        height: 45vh;
+        background-color: white;
+        margin-bottom: 5rem;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+
+   .pie-chart,.d-nut,.radar-chart{
+        width: 100%;
+        height:130% ;
+    }
+   
+
+    .line-chart,
+    .bar-chart{
+        width: 100%;
+        height: 100%;
+        /* background-color: yellow; */
+    }
+
+    header{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15vh;
+    }
+
+    .left-header h1{
+        font-size: 1.4rem;
+    }
+
+    .nav{
+        /* background-color: yellowgreen; */
+        justify-content: flex-start;
+        /* gap: 0; */
+    }
+
+    .nav > div{
+
+        font-size: 0.9rem;
+        width: 80px ;
+        height: 40px;
+        /* background-color: black; */
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        gap: 1rem;
+    }
+
+    #donut{
+        width: 130px;
+    }
+
+    #radar{
+        width: 100px;
+    }
 }

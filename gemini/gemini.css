@@ -191,6 +191,8 @@ box-shadow: 0 0 30px rgb(18, 18, 18,0.7);
     /* background-color: white; */
 }
 
+
+
 .loading{
     width: 100%;
     height: 50vh;
@@ -219,6 +221,7 @@ box-shadow: 0 0 30px rgb(18, 18, 18,0.7);
 .input-box{
     width: 85%;
 height: 100%;
+position: relative;
 /* background-color: red; */
 }
 
@@ -236,6 +239,24 @@ color: white;
 
 .input-box input::placeholder{
     color: rgb(179, 179, 179);
+}
+
+
+.press{
+    position: absolute;
+    width:370px;
+    height: 30px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #282A2C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    left: 0;
+    top: -50%;
+    visibility: hidden;
+    box-shadow: 0 0 5px rgb(55, 54, 54);
 }
 
 .icons{
@@ -351,3 +372,129 @@ color: white;
    width: 30px;
    height: 30px;
 }
+
+
+@media screen and(min-width:350px) and (max-width: 600px) {
+   .answer-box{
+       /* background-color: black; */
+       width: 90%;
+    }
+
+
+    .prompt-box{
+        width: 80%;
+        /* background-color: yellow; */
+       left :12%
+    }
+
+    .input-box{
+        /* background-color: yellow; */
+        width: 70%;
+    }
+
+    .icons{
+        width: 30%;
+    }
+
+    .loading-img{
+        width: 60px;
+    }
+
+    .welcome{
+        font-size: 1.2rem;
+    }
+
+    .nav{
+        width: 8%;
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width: 1200px) {
+    .answer-box{
+        /* background-color: black; */
+        width: 80%;
+     }
+ 
+ 
+     .prompt-box{
+         width: 80%;
+         /* background-color: yellow; */
+        left :12%
+     }
+ 
+     .input-box{
+         /* background-color: yellow; */
+         width: 80%;
+     }
+ 
+     .icons{
+         width: 20%;
+     }
+ 
+     .loading-img{
+         width: 60px;
+     }
+ 
+     .welcome{
+         font-size: 1.3rem;
+     }
+ 
+     .nav{
+         width: 8%;
+     }
+ 
+ }
+
+
+ @media screen and  (max-width: 350px) {
+    .answer-box{
+        /* background-color: black; */
+        width: 80%;
+     }
+ 
+ 
+     .prompt-box{
+         width: 80%;
+         height: 7vh ;
+         /* background-color: yellow; */
+        left :18%;
+        /* padding: 1rem; */
+     }
+
+     .input-box input{
+        padding: 1rem;
+     }
+ 
+     .input-box{
+         /* background-color: yellow; */
+         width: 80%;
+         /* padding: 1rem; */
+     }
+
+     .photo,.mic{
+        display: none;
+     }
+ 
+     .icons{
+         width: 20%;
+     }
+ 
+     .loading-img{
+         width: 60px;
+     }
+ 
+     .welcome{
+         font-size: 1rem;
+     }
+
+     .try{
+        display: none;
+     }
+ 
+     .nav{
+         width: 15%;
+         /* display: none; */
+     }
+ 
+ }

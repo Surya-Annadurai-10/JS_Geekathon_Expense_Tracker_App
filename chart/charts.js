@@ -13,30 +13,30 @@ const categoryArr = data.map((ele) => ele.category.toLowerCase());
   radar = document.querySelector(".radar");
   line = document.querySelector(".line");
     bar.innerHTML = `
-         <div class="chart">
+         <div class="chart bar-chart">
                 <canvas id="myChart-1"></canvas>
         </div>
     `;
     doughnut.innerHTML = `
-         <div class="chart">
+         <div class="chart d-nut">
                 <canvas id="myChart-2"></canvas>
         </div>
     `;
 
     pie.innerHTML = `
-    <div class="chart">
+    <div class="chart pie-chart">
            <canvas id="myChart-3"></canvas>
    </div>
 `;
 
 radar.innerHTML = `
-<div class="chart">
+<div class="chart radar-chart">
        <canvas id="myChart-4"></canvas>
 </div>
 `;
 
 line.innerHTML = `
-<div class="chart">
+<div class="chart line-chart">
        <canvas id="myChart-5"></canvas>
 </div>
 `;
