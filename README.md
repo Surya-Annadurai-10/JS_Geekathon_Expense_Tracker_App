@@ -3,10 +3,10 @@ MYEXPENSE is a comprehensive **Expense Tracker application** that helps users ma
 ## Hosted Link : [Click Me](https://surya-annadurai-10.github.io/JS_Geekathon_Expense_Tracker_App/landingPage/landing.html)
 
 ## Tech Stack
-**Frontend**: HTML, CSS, JavaScript.
-**Storage**: LocalStorage for storing user information.
-**AI Integration**:  ![image](https://github.com/user-attachments/assets/f5bda497-2ef5-4576-830a-6156b8dfafb7)Gemini AI, Tax AI Assistant.
-**Data Visualization**: Chart.js.
+- **Frontend**: HTML, CSS, JavaScript.
+- **Storage**: LocalStorage for storing user information.
+- **AI Integration**:  ![image](https://github.com/user-attachments/assets/f5bda497-2ef5-4576-830a-6156b8dfafb7)Gemini AI, Tax AI Assistant.
+- **Data Visualization**: Chart.js.
 
 # Features:
 ## 1. Landing Page
