@@ -5,33 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: #20302E;
-        }
+    /* GLOBAL STYLES */
+body {
+  /* background: #333;
+  padding-top: 5em;*/
+  display: flex;
+  justify-content: center; 
+}
 
-        .chart{
-          
-          
-        }
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  font-family: 'Times New Roman', Times, serif;
+   background: linear-gradient(to right, #6790eb, red);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   font-size: 3rem;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(98, 98, 96); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4s steps(30, end),
+    blink-caret .5s step-end infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(179, 179, 179) }
+}
     </style>
 </head>
 <body>
-    <div class="chart">
+
+
+
+
+
+
+
+  <div class="typewriter">
+    <h1>Hello,Developer... </h1>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="chart">
         <canvas id="myChart"></canvas>
-      </div>
+      </div> -->
       
       <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 
 
 
 
-      <form action="">
+      <!-- <form action="">
         <input type="text" class="username" placeholder="User Name">
         <input type="email" class="email" placeholder="email">
         <input type="password" class="password"  placeholder="password">
         <input type="password" class="confirm"  placeholder="Confirm Password">
         <button>submit</button>
-      </form>
+      </form> -->
 <!--       
       <script>
         const ctx = document.getElementById('myChart');
